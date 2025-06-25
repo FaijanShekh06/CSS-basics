@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sizing units</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 12px;
+    }
+
+    .box {
+      box-sizing: border-box;
+      border: black solid 2px;
+      /* width: 2048px; */
+      width: 80vw;
+      height: 10vh;
+      margin: auto;
+      background-color: aquamarine;
+
+    }
+
+    .container {
+      box-sizing: border-box;
+      border: black solid 2px;
+      /* width: 2048px; */
+      width: 80vw;
+      /* height: 80vh; */
+      min-height: 80vh;
+      margin: 23px auto;
+      font-size: 18px;
+      background-color: aquamarine;
+    }
+
+    .container p {
+      /* font-size: 2em; */
+      font-size: 2rem;
+
+    }
+
+    .cont {
+      box-sizing: border-box;
+      margin: 23px auto;
+      background-color: red;
+      color: yellow;
+      font-size: 22px;
+      /* width: 100vmin; */
+      width: 80vw;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="box">This is a box</div>
+  <div class="container">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam placeat, vitae odit id nulla
+      quod aliquid asperiores eaque sunt itaque ipsum odio rem consectetur modi porro quas explicabo dolores quasi.
+      Laborum pariatur esse provident, amet sint rerum sequi ducimus iusto dolorum est neque in. Nihil officiis iste
+      nemo,
+      architecto, rerum alias ut perferendis debitis voluptates labore, voluptatum explicabo unde quo dicta deleniti
+      vitae? Nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, maiores repudiandae maxime dicta dolorum quisquam ipsam, doloribus, unde aliquam ipsum nostrum officiis suscipit.</p>
+  </div>
+  <div class="cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consectetur asperiores fugiat
+    corporis enim, minima cumque id iusto, illum nesciunt alias veritatis, saepe voluptatem at aperiam et. Animi,
+    adipisci in.</div>
+</body>
+
+</html>
