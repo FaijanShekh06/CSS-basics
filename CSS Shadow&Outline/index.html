@@ -5,10 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Outline Shadow</title>
+  <style>
+    .box {
+      background-color: blueviolet;
+      color: white;
+      border: 2px solid black;
+      padding: 34px;
+      box-shadow: 5px 10px 15px 5px #3f037a80;
+
+    }
+
+    .text-element {
+      padding: 10px;
+      margin: 25px;
+      text-shadow: 5px 5px 5px #0e0101;
+      border: 2px solid black;
+      border-radius: 50px;
+      border-width: 20px;
+      outline: 2px solid #ff0000;
+      outline-offset: 10px;
+
+    }
+
+  </style>
 </head>
 
 <body>
-
+  <div class="box">I am an Box</div>
+  <div class="text-element">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, ut nisi quibusdam expedita provident blanditiis!
+      Fuga, quaerat, accusantium facilis excepturi aut possimus quasi laborum nisi eos eligendi beatae officia
+      voluptate.</p>
+  </div>
 </body>
 
 </html>
