@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on Selector</title>
+    <style>
+      /* .box:first-child{
+        color: red;
+      } */
+      /* .box:first-line {
+        color: blue;
+      } */
+      /* .boxes * {
+        color: green;
+        border: 2px solid black;
+      } */
+      /* p,a,.box{
+  padding-top: 10px;
+} */
+      /* .box:nth-child(odd){
+  background-color: antiquewhite;
+ } */
+      /* .box:nth-last-child(1) {
+        background-color: lightcoral;
+      } */
+      /* [data-color="primary"]{
+        color: aqua;
+       } */
+      /* .boxes::before {
+        content: "Faijan is great";
+      } */
+      /* .boxes::after {
+        content: "Faijan is great";
+      } */
+
+      /* .boxes::selection{
+        background-color: #a8df20;
+        color: red;
+      } */
+      .box::first-letter {
+        color: red;
+        font-style: italic;
+        font-size: 2em;
+      }
+
+      input::placeholder {
+        color: rgb(121, 121, 168);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div data-color="primary" class="box">I am an Box</div>
+      <div class="box">
+        <p>
+          lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+          repudiandae ab in alias, neque ipsa? Culpa nulla illo, corporis
+          exercitationem, excepturi fugiat sapiente iusto ipsam obcaecati veniam
+          ad voluptatem! Ut!
+        </p>
+      </div>
+      <div class="box">I am an Box</div>
+      <input type="text" name="name" id="name" placeholder="Enter your name" />
+    </div>
+  </body>
+</html>
