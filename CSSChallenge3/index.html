@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: #dfdddd;
+        font-family: Arial, sans-serif;
+      }
+
+      .box {
+        margin: 100px auto;
+        padding: 15px;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        border-radius: 25px;
+        width: 15vw;
+        height: auto;
+        background-color: lch(100% 0.01 296.81);
+      }
+
+      span {
+        border: none;
+        border-radius: 25px;
+        padding: 5px;
+        margin: 15px;
+        background-color: #b3b88d2e;
+        font-size: smaller;
+        font-weight: 600;
+        opacity: 0.7;
+      }
+
+      h2 {
+        text-align: left;
+        font-size: 1.5em;
+        margin: 10px auto;
+        padding: 5px;
+      }
+
+      p {
+        text-align: justify;
+        padding: 5px;
+        font-size: 0.9em;
+        color: #333;
+        opacity: 0.8;
+      }
+
+      .btn {
+        display: block;
+        margin: 10px auto;
+        padding: 10px;
+        width: 10vw;
+        cursor: pointer;
+        background-color: #ff5722;
+        color: white;
+        border: none;
+        border-radius: 25px;
+      }
+
+      .btn:hover {
+        background-color: #ffffff;
+        transition: background-color 0.3s ease;
+        color: #ff5722;
+        border: 1px solid #ff5722;
+      }
+
+      .img {
+        width: 100%;
+        height: 150px;
+        border-radius: 25px;
+        object-fit: cover;
+        margin: 10px auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .main-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .nav {
+        width: 100%;
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+      }
+      .nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+      }
+      .nav ul li {
+        margin: 0 15px;
+        cursor: pointer;
+        padding: 5px 10px;
+        transition: background-color 0.3s ease;
+        border: none;
+        border-radius: 15px;
+        opacity: 0.6;
+      }
+
+      .nav ul li:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Shoes</li>
+      </ul>
+    </div>
+    <div class="main-div">
+      <div class="box">
+        <div>
+          <image
+            class="img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkqavwvceMrULqn_VgrVFqa2R8-UsLOzMytg&s"
+            alt="Sheos"
+          ></image>
+        </div>
+
+        <div>
+          <span>Sport</span>
+          <span>Orange Color</span>
+        </div>
+
+        <div>
+          <h2>Sport Shoes</h2>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at
+            quam nec leo facilisis aliquet.
+          </p>
+        </div>
+
+        <div><button class="btn" type="submit">Read More</button></div>
+      </div>
+      <div class="box">
+        <div>
+          <image class="img" src="image.png" alt="Sheos"></image>
+        </div>
+
+        <div>
+          <span>Sport</span>
+          <span>Orange Color</span>
+        </div>
+
+        <div>
+          <h2>Sport Shoes</h2>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at
+            quam nec leo facilisis aliquet.
+          </p>
+        </div>
+
+        <div><button class="btn" type="submit">Read More</button></div>
+      </div>
+      <div class="box">
+        <div>
+          <image
+            class="img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWauRojM1Z9DdeMX3Jxoi4KlPgrA3z31DUTA&s"
+            alt="Sheos"
+          ></image>
+        </div>
+
+        <div>
+          <span>Sport</span>
+          <span>Orange Color</span>
+        </div>
+
+        <div>
+          <h2>Sport Shoes</h2>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at
+            quam nec leo facilisis aliquet.
+          </p>
+        </div>
+
+        <div><button class="btn" type="submit">Read More</button></div>
+      </div>
+    </div>
+  </body>
+</html>
