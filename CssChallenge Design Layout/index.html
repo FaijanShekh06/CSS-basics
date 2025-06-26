@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Design</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+body{
+background: #000;
+}
+      .nav {
+        background-color: rgb(6, 6, 91);
+        color: white;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        left: 0;
+      }
+      .nav ul {
+        display: flex;
+        list-style: none;
+        padding: 15px;
+        justify-content: right;
+      }
+      .nav ul li {
+        margin: 3px;
+        padding: 0 55px;
+        cursor: pointer;
+      }
+      .nav ul li:hover {
+        background-color: rgb(6, 6, 91);
+        color: white;
+        opacity: 0.5;
+      }
+      .box {
+        justify-self: center;
+      }
+      .box .box1 {
+        width: 544px;
+        height: 544px;
+        margin: 45px;
+        background-color: #cf43cc;
+
+        display: inline-block;
+        text-align: center;
+      }
+      .box .box2 {
+        width: 544px;
+        height: 544px;
+        margin: 45px;
+        background-color: #cd9af1;
+
+        display: inline-block;
+        text-align: center;
+      }
+
+      .box3 {
+        justify-items: center;
+        border: none;
+        border-radius: 40px;
+        margin: 25px 50px;
+        padding: 45px;
+        font-size: 2em;
+        font-weight: bolder;
+        background-color: rgb(6, 6, 91);
+        color: #cd9af1;
+      }
+      .box3:hover {
+        color: rgb(6, 6, 91);
+        background-color: #cd9af1;
+      }
+      .footer {
+        background-color: rgb(6, 6, 91);
+        color: white;
+        padding: 10px;
+      }
+      .footer ul {
+        display: flex;
+        list-style: none;
+        padding: 25px;
+        justify-content: center;
+      }
+      .footer ul li {
+        margin: 3px;
+        padding: 0 55px;
+        cursor: pointer;
+      }
+      .footer ul li:hover {
+        background-color: rgb(6, 6, 91);
+        color: white;
+        opacity: 0.5;
+      }
+      .fixed {
+        float: right;
+        position: fixed;
+        top: 88%;
+        right: 20px;
+        border: none;
+        background-color: #cbc834;
+        border-radius: 100%;
+        padding: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+    </div>
+
+    <div class="box3">
+      <p>Welcome to this Sigma Web Design Development Express</p>
+    </div>
+    <div class="fixed">Chat</div>
+    <div class="footer">
+      <ul>
+        <li>Email</li>
+        <li>Follow On Instagram</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+  </body>
+</html>
