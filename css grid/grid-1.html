@@ -6,16 +6,31 @@
     <title>Css Grid</title>
     <style>
       .container {
-        border: 2px solid yellow;
+        width: 80vw;
+        height: 100vh;
+        border: 2px solid rgb(35, 35, 29);
         display: grid;
-        grid-template-columns: [first]120px [second]100px [third];
-        grid-template-rows: 100px 100px 100px;
+        /* grid-template-columns: [first]120px [second]100px [third];
+        grid-template-rows: 100px 100px 100px; */
+        /* grid-template-columns: 1fr 2fr 1fr;  */
+        /* grid-template-columns: repeat(4, 1fr); */
+        /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+        grid-template-columns: repeat(4, 75px);
+        gap: 5px 10px; /* rows columns gap */
+
+        /* justify-items: center; align in grid shell */
+        /* justify-content: center; align grid center or start,end in container (grid are smaller) */
+        /* align-items: center; aling in shell */
+        /* align-content: center; */
+
+        place-content: center; /* both align and justify content are center*/
+        place-items: center; /* both align and justify items are center*/
       }
       .item {
         border: 2px solid red;
         height: 55px;
         width: 55px;
-      }
+      } /*
       .item4 {
         grid-row: 1/2;
         grid-column: first/third;
@@ -24,7 +39,7 @@
       .item1 {
         grid-row: 3/4;
         grid-column: 2/3;
-      }
+      } */
     </style>
   </head>
   <body>
