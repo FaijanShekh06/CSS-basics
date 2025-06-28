@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design Navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
       * {
         margin: 0;
@@ -22,6 +26,7 @@
         font-family: "Segoe UI";
         font-size: 16px;
         padding: 0px 25px;
+        cursor: pointer;
       }
       .box1 .img1 {
         align-self: flex-start;
@@ -45,16 +50,24 @@
         text-transform: uppercase;
         padding: 10px 25px;
         border-radius: 5px;
-      }
-      .box7 .img2 {
-        height: 20px;
-        width: 20px;
+        cursor: pointer;
       }
       .box7 {
+        display: flex;
+        align-content: center;
+        gap: 10px;
+      }
+      .img2 {
+        justify-items: center;
+        height: 20px;
+        width: 20px;
       }
       .box8 .img2 {
         height: 24px;
         width: 24px;
+      }
+      .box:hover {
+        opacity: 0.8;
       }
     </style>
   </head>
@@ -69,13 +82,14 @@
             width="245"
           />
         </div>
-        <div class="box box2">Products</div>
-        <div class="box box3">Pricing</div>
-        <div class="box box4">Resources</div>
-        <div class="box box5">Our Company</div>
+        <div class="box box2">Products <i class="fa fa-angle-down"></i></div>
+        <div class="box box3">Pricing <i class="fa fa-angle-down"></i></div>
+        <div class="box box4">Resources <i class="fa fa-angle-down"></i></div>
+        <div class="box box5">Our Company <i class="fa fa-angle-down"></i></div>
         <div class="box box6"><button class="btn">Buy Now</button></div>
         <div class="box box7">
-          <image class="img2" src="world.png" alt="" />English
+          <image class="img2" src="world.png" alt="" />
+          <div>English</div>
         </div>
         <div class="box box8">
           <img class="img2" src="search.png" alt="" />
